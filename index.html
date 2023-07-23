@@ -12,14 +12,104 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+        <!-- font awesome kit link -->
+        <script src="https://kit.fontawesome.com/3830be4924.js" crossorigin="anonymous"></script>
+        <!-- tailwind-custom-color -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                  }
+                }
+              }
+            }
+          </script>
+          <!-- font style -->
         <style>
-            .font-family: 'Manrope', sans-serif;
+            .font-manrope{
+                font-family: 'Manrope', sans-serif;
+            }
         </style>
 
 
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header-section -->
+    <header>
+        <div class="hero container mx-auto">
+            <div class="hero-content flex-col lg:flex-row">
+              
+              <div>
+                <h1 class="text-7xl font-extrabold text-[#1C1C1C]">It's good <br> 
+                    tea time at The <br>
+                    Tea House</h1>
+                <p class="py-7 text-[#777] text-base font-medium">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary">Explore More</button>
+              </div>
+              <!-- image div -->
+              <div>
+                <img src="./images/banner.png" class="max-w-sm" />
+                <!-- rating div -->
+                <div class="flex items-center bg-white gap-2 drop-shadow-2xl p-5 w-60 -mt-16 rounded-2xl">
+                    <i class="fa-solid fa-star text-3xl text-yellow-500"></i>
+                    <!-- text div -->
+                    <div>
+                        <h3 class="text-3xl text-[#1C1C1C] font-bold">5.00</h3>
+                        <p class="text-[#777] text-base font-semibold">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </header>
+    <!-- main section start here -->
+    <main>
+        <section class="container mx-auto text-center my-24">
+            <h3 class="text-[#1C1C1C] text-4xl font-extrabold mb-5">Our Featured Products</h3>
+            <p class="text-[#777] text-base font-medium lg:max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+            <!-- featured tea-card-container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-8">
+                <!-- first card -->
+                <div class=" mt-12 card bg-[#F4F4F4] p-8">
+                    <figure><img src="./images/tea-1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center text[#1C1C1C] text-2xl font-bold">Milk Tea</h2>
+                      <p class="justify-center text-base text-[#777] font-semibold">Creamer could be replaced <br>by fresh milk</p>
+                    </div>
+                  </div>
+                  <!-- second-card -->
+                <div class=" mt-12 card bg-[#F4F4F4] p-8">
+                    <figure><img src="./images/tea-2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center text[#1C1C1C] text-2xl font-bold">Milk Tea</h2>
+                      <p class="justify-center text-base text-[#777] font-semibold">Creamer could be replaced <br>by fresh milk</p>
+                    </div>
+                  </div>
+                  <!-- third-card -->
+                <div class=" mt-12 card bg-[#F4F4F4] p-8">
+                    <figure><img src="./images/tea-3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center text[#1C1C1C] text-2xl font-bold">Milk Tea</h2>
+                      <p class="justify-center text-base text-[#777] font-semibold">Creamer could be replaced <br>by fresh milk</p>
+                    </div>
+                  </div>
+                  <!-- fourth-card -->
+                <div class=" mt-12 card bg-[#F4F4F4] p-8">
+                    <figure><img src="./images/tea-4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title justify-center text[#1C1C1C] text-2xl font-bold">Milk Tea</h2>
+                      <p class="justify-center text-base text-[#777] font-semibold">Creamer could be replaced <br>by fresh milk</p>
+                    </div>
+                  </div>
+            </div>
+
+        </section>
+    </main>
 
 </body>
 
